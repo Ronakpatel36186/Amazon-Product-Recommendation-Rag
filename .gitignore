@@ -19,6 +19,7 @@ rag/*.csv
 # Environment
 .env
 
+
 # Python
 __pycache__/
 *.pyc
@@ -30,3 +31,7 @@ notebooks/mlflow.db
 
 # Docker
 docker-compose.override.yml
+
+
+task-definition.json
+trust-policy.json
