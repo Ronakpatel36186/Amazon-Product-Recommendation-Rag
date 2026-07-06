@@ -17,6 +17,22 @@ into a production-ready RAG pipeline — deployed on AWS ECS Fargate with GitHub
 ## 🎥 Demo
 [Watch 60-second demo](https://www.loom.com/share/0f59f1e019c24a15a7bdc39db8a32dbe)
 
+## 📸 Screenshots
+
+**Tab 1 — Recommender**
+![Tab 1](screenshots/AWS-Live Public IP Steamlit Recommender.png)
+
+**Tab 2 — Product Explorer + SHAP**
+![Tab 2](screenshots/AWS-Live Public IP Streamlit Product Explorer.png)
+
+**Tab 3 — A/B Testing**
+![Tab 3](screenshots/AWS-Live Public IP Steamlit A-B Testing.png)
+
+**Tab 4 — Live Monitoring**
+![Tab 4](screenshots/AWS-Live Public IP Steamlit Live API Monitoring.png)
+
+**API Swagger Docs**
+![Swagger](screenshots/AWS-Live Public IP Swagger UI.png)
 ## 📊 Key Metrics
 
 | Metric | Score |

@@ -35,3 +35,11 @@ docker-compose.override.yml
 
 task-definition.json
 trust-policy.json
+
+# screenshots
+screenshots/A-B-testing.png
+screenshots/Live_API_Monitoring.png
+screenshots/Product Explorer-1.png
+screenshots/Product Explorer-2.png
+screenshots/Recommender.png
+screenshots/Streamlit UI Amazon.mp4
