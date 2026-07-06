@@ -22,17 +22,26 @@ into a production-ready RAG pipeline — deployed on AWS ECS Fargate with GitHub
 **Tab 1 — Recommender**
 ![Tab 1](screenshot/recommender.png)
 
+<br><br>
+
 **Tab 2 — Product Explorer + SHAP**
 ![Tab 2](screenshot/product_explorer.png)
+
+<br><br>
 
 **Tab 3 — A/B Testing**
 ![Tab 3](screenshot/ab_testing.png)
 
+<br><br>
+
 **Tab 4 — Live Monitoring**
 ![Tab 4](screenshot/monitoring.png)
 
+<br><br>
+
 **API Swagger Docs**
 ![Swagger](screenshot/swagger.png)
+
 
 ## 📊 Key Metrics
 
