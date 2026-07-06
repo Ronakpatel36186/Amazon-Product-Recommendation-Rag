@@ -1,0 +1,32 @@
+venv/
+screenshot/
+
+
+# Data files (too large for GitHub)
+data/*.csv
+data/*.npy
+data/*.jsonl
+
+# ML models
+ml/*.json
+ml/*.pkl
+
+# FAISS indexes
+rag/*.index
+rag/*.npy
+rag/*.csv
+
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# MLflow
+mlruns/
+notebooks/mlflow.db
+
+# Docker
+docker-compose.override.yml
