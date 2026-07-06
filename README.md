@@ -20,19 +20,20 @@ into a production-ready RAG pipeline — deployed on AWS ECS Fargate with GitHub
 ## 📸 Screenshots
 
 **Tab 1 — Recommender**
-![Tab 1](screenshots/AWS-Live Public IP Steamlit Recommender.png)
+![Tab 1](screenshot/recommender.png)
 
 **Tab 2 — Product Explorer + SHAP**
-![Tab 2](screenshots/AWS-Live Public IP Streamlit Product Explorer.png)
+![Tab 2](screenshot/product_explorer.png)
 
 **Tab 3 — A/B Testing**
-![Tab 3](screenshots/AWS-Live Public IP Steamlit A-B Testing.png)
+![Tab 3](screenshot/ab_testing.png)
 
 **Tab 4 — Live Monitoring**
-![Tab 4](screenshots/AWS-Live Public IP Steamlit Live API Monitoring.png)
+![Tab 4](screenshot/monitoring.png)
 
 **API Swagger Docs**
-![Swagger](screenshots/AWS-Live Public IP Swagger UI.png)
+![Swagger](screenshot/swagger.png)
+
 ## 📊 Key Metrics
 
 | Metric | Score |
