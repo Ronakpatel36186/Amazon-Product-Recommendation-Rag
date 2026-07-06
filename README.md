@@ -1,4 +1,4 @@
-# Amazon Product Recommendation
+# Amazon Product Recommendation System
 ### RAG + LLM Personalization | XGBoost Re-ranking | RAGAS Evaluated | AWS Deployed
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
