@@ -1,0 +1,49 @@
+name: Deploy to AWS ECS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Build and push API image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        run: |
+          docker build -t $ECR_REGISTRY/amazon-recommendation-api:latest \
+            -f backend/Dockerfile .
+          docker push $ECR_REGISTRY/amazon-recommendation-api:latest
+
+      - name: Build and push UI image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        run: |
+          docker build -t $ECR_REGISTRY/amazon-recommendation-ui:latest \
+            -f frontend/Dockerfile .
+          docker push $ECR_REGISTRY/amazon-recommendation-ui:latest
+
+      - name: Force ECS redeploy
+        run: |
+          aws ecs update-service \
+            --cluster amazon-recommendation-cluster \
+            --service amazon-recommendation-service \
+            --force-new-deployment \
+            --region us-east-1
