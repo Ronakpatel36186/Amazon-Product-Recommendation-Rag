@@ -47,6 +47,8 @@ into a production-ready RAG pipeline — deployed on AWS ECS Fargate with GitHub
 
 | Metric | Score |
 |--------|-------|
+| NDCG@10 | 0.89 |
+| Precision@10 | 0.90 |
 | RAGAS Faithfulness | 0.45 |
 | RAGAS Answer Relevancy | 0.90  |
 | RAGAS Context Recall | 0.80  |
@@ -174,8 +176,7 @@ aws ecs update-service --cluster amazon-recommendation-cluster \
 
 ## 📝 Resume Bullet
 
-Built end-to-end Amazon-style recommendation system — XGBoost + ALS ranking (RMSE: 0.5647),
-dual FAISS retrieval (OpenAI + HuggingFace sentence-transformers, 50k products),
+Built end-to-end Amazon-style recommendation system — XGBoost + ALS ranking (RMSE: 0.5647, NDCG@10: 0.89, Precision@10: 0.90), dual FAISS retrieval (OpenAI + HuggingFace sentence-transformers, 50k products),
 RAG pipeline with LLM personalization (RAGAS answer relevancy: 0.90, context recall: 0.80),
 citation-grounded Q&A, SHAP explainability, A/B testing with scipy, real-time monitoring,
 deployed on AWS ECS Fargate via GitHub Actions CI/CD.
